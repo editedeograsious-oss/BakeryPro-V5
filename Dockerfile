@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN apk add --no-cache unzip
 
-COPY ["Ds_Bakery_V13_4_1_SyncFix.zip", "/tmp/ds-bakery.zip"]
+COPY ["Ds_Bakery_V13_4_2_StaleQueueRecovery.zip", "/tmp/ds-bakery.zip"]
 
 RUN unzip -q /tmp/ds-bakery.zip -d /app \
     && rm /tmp/ds-bakery.zip \
